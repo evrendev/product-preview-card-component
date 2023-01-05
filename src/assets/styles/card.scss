@@ -1,0 +1,91 @@
+@import "./shared/responsive";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  
+    .card {
+      width: 50em;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border-radius: var(--size-400);
+      box-shadow: 0 0 10px 0 var(--clr-neutral-100);
+      overflow: hidden;
+  
+      @include media(mobile) {
+        width: 94vw;
+        grid-template-columns: 1fr;
+      }
+  
+      .product-image {
+        background-image: url("@/assets/images/image-product-desktop.jpg");
+        background-position: top left;
+        background-size: contain;
+        background-repeat: no-repeat;
+  
+        @include media(mobile) {
+          background-position: center;
+          background-size: cover;
+          max-height: 20em;
+        }
+  
+        img {
+          visibility: hidden;
+        }
+      }
+  
+      .product-info {
+        padding: var(--size-700);
+  
+        > div {
+          margin-bottom: var(--size-900);
+  
+          @include media(mobile) {
+            margin-bottom: var(--size-400);
+          }
+        }
+  
+        span {
+          &.product-category {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
+
+        .product-title {
+          line-height: 1;
+        }
+  
+        .price-wrapper {
+          display: flex;
+          align-items: center;
+  
+          .old-price {
+            margin-left: var(--size-400);
+          }
+        }
+  
+        button {
+          &.add-to-cart {
+            width: 100%;
+            background-color: var(--clr-primary-400);
+            color: var(--clr-primary-100);
+            border: 0;
+            border-radius: var(--size-100);
+            padding: var(--size-400);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+  
+            span {
+              margin-left: var(--size-400);
+            }
+          }
+        }
+      }
+    }
+  }
