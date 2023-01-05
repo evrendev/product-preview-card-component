@@ -30,7 +30,7 @@
         @include media(mobile) {
           background-position: center;
           background-size: cover;
-          max-height: 20em;
+          max-height: 18em;
         }
   
         img {
@@ -45,7 +45,7 @@
           margin-bottom: var(--size-900);
   
           @include media(mobile) {
-            margin-bottom: var(--size-400);
+            margin-bottom: var(--size-100);
           }
         }
   
