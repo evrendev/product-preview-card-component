@@ -46,12 +46,16 @@
   color: var(--clr-neutral-900);
 }
 
+.text-line-through {
+  text-decoration: line-through;
+}
+
 .fw-regular {
   font-weight: var(--fw-regular);
 }
 
-.fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
+.fw-bold {
+  font-weight: var(--fw-bold);
 }
 
 .fs-body {
