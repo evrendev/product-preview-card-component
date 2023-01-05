@@ -1,14 +1,17 @@
 <script>
+import ProductCard from "@/components/ProductCard.vue";
 export default {
   name: "App",
-  setup() {
-    return {};
+  components: {
+    ProductCard,
   },
 };
 </script>
 
 <template>
-  <div>App</div>
+  <div>
+    <product-card />
+  </div>
 </template>
 
 <style lang="scss">
