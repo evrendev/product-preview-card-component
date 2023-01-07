@@ -9,9 +9,9 @@ export default {
 </script>
 
 <template>
-  <div>
+  <main role="main">
     <product-card />
-  </div>
+  </main>
 </template>
 
 <style lang="scss">

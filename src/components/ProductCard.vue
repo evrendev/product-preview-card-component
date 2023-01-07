@@ -2,14 +2,17 @@
   <div class="container">
     <div class="card bg-primary-100">
       <div class="product-image">
-        <img src="@/assets/images/image-product-desktop.jpg" alt="Product Image" />
+        <img
+          src="@/assets/images/image-product-desktop.jpg"
+          alt="Gabrielle Essence Eau De Parfum"
+        />
       </div>
       <div class="product-info">
         <div>
           <span class="product-category text-neutral-900"> Perfume </span>
         </div>
         <div>
-          <h2 class="product-title ff-heading fw-bold fs-900">Gabrielle Essence Eau De Parfum</h2>
+          <h1 class="product-title ff-heading fw-bold fs-900">Gabrielle Essence Eau De Parfum</h1>
         </div>
         <div>
           <p class="product-description text-neutral-900">
@@ -19,7 +22,7 @@
         </div>
         <div class="price-wrapper">
           <span class="current-price ff-heading fs-900 text-primary-400 fw-regular"> $149.99 </span>
-          <span class="old-price text-line-through text-neutral-900"> $169.99 </span>
+          <del class="old-price text-line-through text-neutral-900 sr-only"> $169.99 </del>
         </div>
         <button class="add-to-cart">
           <svg-icon :name="'icon-cart'" />
